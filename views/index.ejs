@@ -4,51 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!-- Leaflet -->
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  integrity="sha256-sA+Sk2tIYZh4t59f+9vev6CwB2M/9jT1f8kH9vPyZ+o="
-  crossorigin=""
-/>
 
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <!-- Leaflet Routing Machine -->
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css"
-/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css"/>
+<!-- Leaflet Geocoder -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
+<!-- Your CSS -->
+<link rel="stylesheet" href="/css/style.css"/>
 
-<!-- Leaflet Control Geocoder -->
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"
-/>
-
-  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
   <button id="startTracking">Start Sharing Location</button>
   <div id="map"></div>
 
-
-  <!-- Leaflet -->
-<script
-  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-o9N1jv8F0o9T+6WGMvsyJX9G8nZyG6r6fQIR0+9MMj0="
-  crossorigin=""
-></script>
-
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <!-- Leaflet Routing Machine -->
 <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.min.js"></script>
-
-<!-- Leaflet Control Geocoder -->
+<!-- Leaflet Geocoder -->
 <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
-
 <!-- Socket.io client -->
 <script src="/socket.io/socket.io.js"></script>
+<!-- Your JS -->
+<script src="/js/main.js"></script>
 
-  <script src="/js/script.js"></script>
 </body>
 
 </html>
+
