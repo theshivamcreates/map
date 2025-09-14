@@ -25,7 +25,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 const markers ={};
 
 socket.on('receive-location', (data)=>{
-  const {id, latitude,longitude} = dat a;
+  const {id, latitude,longitude} = data;
   map.setView([latitude, longitude], 16);
 
   if(markers[id]){
@@ -44,4 +44,5 @@ socket.on('user-disconnected', (id)=>{
 
 L.Control.geocoder({
   defaultMarkGeocode: true
+
 }).addTo(map);
